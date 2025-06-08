@@ -5,6 +5,7 @@ import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import { Thread } from '@/components/thread';
 
 export default function HomeScreen() {
   return (
@@ -50,6 +51,13 @@ export default function HomeScreen() {
           <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
           <ThemedText type="defaultSemiBold">app-example</ThemedText>.
         </ThemedText>
+      </ThemedView>
+        <ThemedView style={styles.stepContainer}>
+        <ThemedText type="subtitle">Step 4: Chat UI</ThemedText>
+        <ThemedText>
+          {`This app includes a chat UI example. Press `}
+        </ThemedText>
+        <Thread></Thread>
       </ThemedView>
     </ParallaxScrollView>
   );
